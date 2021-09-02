@@ -8,24 +8,26 @@
 </head>
 <body>
 
-    <!DOCTYPE html>
-<html>
-<body>
+    <p>Click the button to display this browser window's height and width</p>
+    <button id="height_width">Height and Width</button>
+    <p id="d1"></p>
 
-<p>Click the button to display this browser window's height and width (including toolbars and scrollbars).</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p><strong>Note:</strong> The outerWidth and outerHeight properties are not supported in IE8 and earlier.</p>
-
-<p id="demo"></p>
+    <br>
+    <p>Click to Know the Title of the page in an alert box.</p>
+    <button id="ttl">Title of Page</button>
+    <p id="d2"></p>
 
 <script>
-function myFunction() {
-  var w = window.outerWidth;
-  var h = window.outerHeight;
-  document.getElementById("demo").innerHTML = "Width: " + w + "<br>Height: " + h;
-}
+    document.getElementById('height_width').addEventListener('click', function() {
+        var w = window.outerWidth;
+        var h = window.outerHeight;
+        document.getElementById('d1').innerHTML = 'Height: '+h+'<br>Width: '+w;
+    }, false)
+
+    document.getElementById('ttl').addEventListener('click', function() {
+        var t = 'Title of the Page: ' + document.title;
+        alert(t);
+    }, false)
 </script>
 
 </body>
