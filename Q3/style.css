@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;600&display=swap');
+  
+body {
+    padding-left: 1rem;
+    font-family: Source Sans Pro;
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0em 3em 10em;
+}
+
+.intro {
+    font-family: epilogue;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-weight: 100;
+    font-size: 7rem;
+}
+
+.rect
+{
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+    height: 90px;
+    width: 500px;
+
+    background-color:  #2f2f2f;
+    border-radius: 100px;
+    color: white;
+}
+
+.text {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+b, em{
+    font-weight: 400;
+}
+
+#hobbies {
+    width: 60vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /*border: 1px solid black;*/
+}
+
+h1 {
+    font-family: Epilogue;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 80px;
+    margin-bottom: 0px;    
+    /*text-decoration: underline;
+    text-decoration-thickness: from-font;*/
+}
+
+
