@@ -8,7 +8,28 @@
 </head>
 <body>
 
-    
+    <!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display this browser window's height and width (including toolbars and scrollbars).</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> The outerWidth and outerHeight properties are not supported in IE8 and earlier.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var w = window.outerWidth;
+  var h = window.outerHeight;
+  document.getElementById("demo").innerHTML = "Width: " + w + "<br>Height: " + h;
+}
+</script>
+
+</body>
+</html>
     
 </body>
 </html>
