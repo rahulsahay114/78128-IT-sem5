@@ -11,23 +11,37 @@
     <p>Click the button to display this browser window's height and width</p>
     <button id="height_width">Height and Width</button>
     <p id="d1"></p>
-
+    
     <br>
     <p>Click to Know the Title of the page in an alert box.</p>
     <button id="ttl">Title of Page</button>
     <p id="d2"></p>
 
+    <br>
+    <p>Click to know several window properties</p>
+    <button id = "prop">Properties</button>
+    <p id ='d3'></p>
+
 <script>
     document.getElementById('height_width').addEventListener('click', function() {
         var w = window.outerWidth;
         var h = window.outerHeight;
-        document.getElementById('d1').innerHTML = 'Heighht: '+h+'<br>Width: '+w;
+        document.getElementById('d1').innerHTML = 'Height: '+ h +'<br>Width: '+ w;
     }, false)
 
     document.getElementById('ttl').addEventListener('click', function() {
         var t = 'Title of the Page: ' + document.title;
         alert(t);
     }, false)
+
+    document.getElementById('prop').addEventListener('click', function() {
+        document.getElementById('d3').innerHTML = 
+        '<br>Window Inner Height: '+ window.innerHeight
+        + '<br>Window Innher Width: '+ window.innerWidth
+        + '<br>Reference to current page: '+ window.document
+        + '<br>Reference to screen object: '+ window.screen;
+    }, false)
+
 </script>
 
 </body>
