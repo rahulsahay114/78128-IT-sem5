@@ -22,6 +22,11 @@
     <button id = "prop">Properties</button>
     <p id ='d3'></p>
 
+    <br>
+    <p>Click to know several Document properties</p>
+    <button id = "doc">Doc Properties</button>
+    <p id ='d4'></p>
+
 <script>
     document.getElementById('height_width').addEventListener('click', function() {
         var w = window.outerWidth;
@@ -40,6 +45,12 @@
         + '<br>Window Innher Width: '+ window.innerWidth
         + '<br>Reference to current page: '+ window.document
         + '<br>Reference to screen object: '+ window.screen;
+    }, false)
+
+    document.getElementById('doc').addEventListener('click', function() {
+        document.getElementById('d4').innerHTML = 
+        '<br>Document URL: '+ document.URL +
+        '<br>Document Domain: '+ document.domain;
     }, false)
 
 </script>
