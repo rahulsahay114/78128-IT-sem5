@@ -16,37 +16,7 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    flex-flow: row;
-}
-
-.wrapper>div {
-    padding: 1rem;
-    
-    margin: 1rem;
-}
-
-input, button {
-    width : 250px;
-    padding: 5px;
-    margin: 1em 1em 1em 0;
-    box-sizing: border-box;
-    color: black;
-    display: block;
-}
-
-label {
-    cursor: pointer;
-}
-
-textarea {
-    display:block;
-    margin-top: 20px;
-    width: 250px;
-    font-family: Source Sans Pro;
-    font-size: 1.2rem;
-    font-weight: 100;
-    resize: none;
+    padding: 3rem 0 0 5rem;
 }
 
 button {
@@ -57,13 +27,3 @@ button {
     background: none;
     cursor: pointer;
 }
-
-button:after {
-    content: " >>>";
-  }
-  
-  button:hover, button:focus {
-    outline: none;
-    background: #000;
-    color: #FFF;
-  }
