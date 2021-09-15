@@ -12,12 +12,35 @@
         
         <div class="heading">
             <h1>List <b>Practice</b></h1>
+            <p>Click the list items.</p>
         </div>
 
-        <li class="items">test</li>
-        <li class="items">test</li>
-        <li class="items">test</li>
-        <li class="items">test</li>
+        <div class="list-container">
+            <li class="items">½ Banana</li>
+            <li class="items">2 Eggs</li>
+            <li class="items">300g Wheat Flour</li>
+            <li class="items">1 tspn Cinnamon</li>
+        </div>
+
     </div>
 </body>
+<script>
+    var l = document.querySelectorAll(".items");
+    
+    l.item(0).addEventListener('click', function(){
+        l.item(0).className = "line items"
+    }, false)
+
+    l.item(1).addEventListener('click', function(){
+        l.item(1).className = "line items"
+    }, false)
+    
+    l.item(2).addEventListener('click', function(){
+        l.item(2).className = "line items"
+    }, false)
+
+    l.item(3).addEventListener('click', function(){
+        l.item(3).className = "line items"
+    }, false)
+</script>
 </html>

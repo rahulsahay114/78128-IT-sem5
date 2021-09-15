@@ -27,3 +27,38 @@ button {
     background: none;
     cursor: pointer;
 }
+
+input {
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+.line {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.red {
+    background-color: #ff5555;
+    color: white;
+}
+
+.items {
+    transition: box-shadow .3s;
+    padding: 1rem;
+    margin: 6px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.items:hover {
+    box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.list-container{
+    display: flex;
+    flex-flow: column;
+    width: 20vw;
+}
