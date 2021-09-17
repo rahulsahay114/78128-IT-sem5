@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Methods</title>
+</head>
+<body>
+    <form id='myform'>
+        <input type="text" placeholder="Enter Item" id = "to-add">
+        <input id="add" type="submit" value="Add">
+    </form>
+    
+    <br>
+    <input id="firstChild" type="button" value="firstChild">
+    <input id="lastChild" type="button" value="lastChild">
+    
+    <br><br><span>Click Items to Cross them off</span>
+    <ul id = "list"><li class="items">Bread</li
+        ><li class="items">Eggs</li
+        ><li class="items">Oats</li
+        ><li class="items">Banana</li
+    ></ul>
+
+    <input type="button" value="print all the childNodes in UL above" id = "childnodes">
+    <p id="demo"></p>
+</body>
+
+<script>
+    var firstchild = document.getElementById('firstChild');
+    var lastchild = document.getElementById('lastChild');
+    var childnodes = document.getElementById('childnodes');
+    var add = document.getElementById('add');
+    
+    console.log(firstchild);
+    console.log(lastchild);
+    
+    var lst = document.getElementsByTagName('ul');
+    console.log(lst[0]);
+
+    document.addEventListener('click', function(){
+        if(event.target.className == "items") {
+            event.target.className = "line items";
+        }
+        
+        else if(event.target.className == "line items") {
+            event.target.className = "items";
+        }
+    });
+    
+    firstchild.addEventListener('click', function(){
+        lst[0].firstChild.innerHTML = "firstChild";
+    })
+
+    lastchild.addEventListener('click', function(){
+        lst[0].lastChild.innerHTML = "lastChild";
+    })
+
+    //printing all of the Childnodes of our to-do List
+    childnodes.addEventListener('click', function(){
+        x = document.getElementById('list').childNodes;
+        console.log(x);
+        
+        var txt = "";
+        for(i=0; i<x.length; i++) {
+            txt = txt + x[i].nodeName + "<br>";
+        }
+        
+        document.getElementById("demo").innerHTML = txt;
+    })
+
+    function addItem() {
+        event.preventDefault();
+        var val = document.getElementById('to-add');
+
+        if(val.value != "") {
+            var l = document.getElementById('list');
+            ele = document.createElement("li");
+            ele.innerHTML = val.value + "<input type='button' class = 'del' value='X'>";
+            ele.className = "items";
+            lst[0].appendChild(ele);
+            val.value = "";
+        }
+
+        else{
+            alert('Empty List Item');
+        }
+    }
+
+    add.addEventListener('click', addItem, false);
+
+</script>
+</html>

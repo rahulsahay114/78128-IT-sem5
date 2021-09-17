@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+body {
+    font-family: source sans pro;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #2f2f2f;
+}
+
+.heading>h1{
+    font-family: Epilogue;
+    font-size: 4rem;
+    font-weight: 100;
+    width: 250px;
+}
+
+.wrapper {
+    padding: 3rem 0 0 5rem;
+}
+
+button {
+    padding: 5px;
+    font: bold .6em 100;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+.line {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.red {
+    background-color: #ff5555;
+    color: white;
+}
+
+.items {
+    width: 20vw;
+    transition: box-shadow .3s;
+    padding: 1rem;
+    margin: 6px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.items:hover {
+    box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.list-container{
+    display: flex;
+    flex-flow: column;
+    width: 20vw;
+}
+
+.del {
+    position: relative;
+    left: 15vw;
+}
