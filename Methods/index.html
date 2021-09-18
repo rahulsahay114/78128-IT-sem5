@@ -8,6 +8,9 @@
     <title>Methods</title>
 </head>
 <body>
+    <div class="heading">
+        <h1>Methods <b>Practice</b></h1>
+    </div>
     <form id='myform'>
         <input type="text" placeholder="Enter Item" id = "to-add">
         <input id="add" type="submit" value="Add">
@@ -25,71 +28,10 @@
     ></ul>
 
     <input type="button" value="print all the childNodes in UL above" id = "childnodes">
+    <input type="button" value="removeChild" id="removechild">
+
     <p id="demo"></p>
 </body>
 
-<script>
-    var firstchild = document.getElementById('firstChild');
-    var lastchild = document.getElementById('lastChild');
-    var childnodes = document.getElementById('childnodes');
-    var add = document.getElementById('add');
-    
-    console.log(firstchild);
-    console.log(lastchild);
-    
-    var lst = document.getElementsByTagName('ul');
-    console.log(lst[0]);
-
-    document.addEventListener('click', function(){
-        if(event.target.className == "items") {
-            event.target.className = "line items";
-        }
-        
-        else if(event.target.className == "line items") {
-            event.target.className = "items";
-        }
-    });
-    
-    firstchild.addEventListener('click', function(){
-        lst[0].firstChild.innerHTML = "firstChild";
-    })
-
-    lastchild.addEventListener('click', function(){
-        lst[0].lastChild.innerHTML = "lastChild";
-    })
-
-    //printing all of the Childnodes of our to-do List
-    childnodes.addEventListener('click', function(){
-        x = document.getElementById('list').childNodes;
-        console.log(x);
-        
-        var txt = "";
-        for(i=0; i<x.length; i++) {
-            txt = txt + x[i].nodeName + "<br>";
-        }
-        
-        document.getElementById("demo").innerHTML = txt;
-    })
-
-    function addItem() {
-        event.preventDefault();
-        var val = document.getElementById('to-add');
-
-        if(val.value != "") {
-            var l = document.getElementById('list');
-            ele = document.createElement("li");
-            ele.innerHTML = val.value + "<input type='button' class = 'del' value='X'>";
-            ele.className = "items";
-            lst[0].appendChild(ele);
-            val.value = "";
-        }
-
-        else{
-            alert('Empty List Item');
-        }
-    }
-
-    add.addEventListener('click', addItem, false);
-
-</script>
+<script src="script.js"></script>
 </html>
