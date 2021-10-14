@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Q8</title>
+</head>
+<body>
+    <input type="button" value="Add Style" id="add_style">
+    <div class="container">
+        <div class='headline'>Atma Ram Sanatan Dharma College</div>
+        <div class="badge">
+            <div class='heading'>BSc Computer Science</div>
+            <div class = 'hons'>HONORS</div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class='headline1'>Eligibility Criteria</div>
+    <div class="text">
+        <div id='hobbies'>
+            <ul>
+                <li>Passed AISSCE (12<sup>th</sup>) Board Examinations, and secured more than 60% aggregrate.</li>
+                <li>Demonstrated Interest in Computation and Mathematical analysis; enjoys working with numbers and has preferably taken a Computer Science Course during high schooling (provided if there was an option to do so)</li>
+                <li>Harbours a passion for creating and exploring solutions to problems. </li>
+            </ul>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class='headline1'>Yearly Fees</div>
+    <div class="text">
+        <p>
+            Computer Science Honors at Atma Ram Sanatan Dharma College, Dhaula Kuan is a self-funded course.
+            The annual fee amount payable by a student is around <b>₹50,000</b>.
+        </p>
+    </div>
+
+    <br><br><br>
+
+    <div class='headline1'>Paper Name</div>
+    <div id="hobbies">
+        <ul>
+            <li>BHCS01 Programming Fundamentals using C++ 
+                <div class = 'credits'>6 credits</div></li>
+            <li>BHCS02 Computer System Architecture 
+                <div class = 'credits'>6 credits</div> 
+            </li>
+            <li>BHCS03 Programming in JAVA 
+                <div class = 'credits'>6 credits</div> 
+            </li>
+            <li>BHCS04 Discrete Structure
+                <div class = 'credits'>6 credits</div> 
+            </li>
+            <li>BHCS05 Data Structures
+                <div class = 'credits'>6 credits</div> 
+            </li>
+            <li>BHCS06 Operating System
+                <div class = 'credits'>6 credits</div> 
+            </li>
+            <li>BHCS07 Computer Networks
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS08 Design and Analysis of Algorithms
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS09 Software Engineering
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS10 Database Management Systems
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS19B Programming in Python
+                <div class = 'credits'>4 credits</div>
+                <div class = 'credits sec'>SEC</div>
+            </li>
+            <li>BHCS20A Android Programming
+                <div class = 'credits'>4 credits</div>
+                <div class = 'credits sec'>SEC</div>
+            </li>
+            <li>GE-1
+                <div class = 'credits'>6 credits</div>
+                <div class = 'credits ge'>GE</div>
+            </li>
+            <li>GE-2
+                <div class = 'credits'>6 credits</div>
+                <div class = 'credits ge'>GE</div>
+            </li>
+            <li>GE-3
+                <div class = 'credits'>6 credits</div>
+                <div class = 'credits ge'>GE</div>
+            </li>
+            <li>GE-4
+                <div class = 'credits'>6 credits</div>
+                <div class = 'credits ge'>GE</div>
+            </li>
+            <li>BHCS11 Internet Technologies
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS12 Theory of Computation
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS15B System Programming
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS16B Microprocessor
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS13 Artificial Intelligence
+                <div class = 'credits'>6 credits</div>
+            </li>
+            <li>BHCS14 Computer Graphics
+                <div class = 'credits'>6 credits</div>
+            </li>
+        </ul>
+    </div>
+
+    <br><br><br>
+    <div class='headline1'>Future Possibilities</div>
+    <div class="text">
+        <p>
+            There are several options to pursure, apart from higher education in the form of a MS or MCA. Here is a list of professions to name a few:
+        </p>
+    </div>
+    
+    <div id="hobbies">
+        <div>
+            <ul>
+                <li>Big Data Engineer</li>
+                <li>Machine Learning Engineer</li>
+                <li>Data Scientist</li>
+                <li>Data Analyst</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Blockchain Developer/Engineer</li>
+                <li>Software Developer</li>
+                <li>Computer Network Architect</li>
+                <li>Computer Systems Analyst.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#add_style").click(function() {
+                $('head').append('<link rel="stylesheet" href="style.css" type="text/css" />');
+                $("#add_style").css("display","none");
+            });
+        });
+    </script>
+</body>
+</html>
